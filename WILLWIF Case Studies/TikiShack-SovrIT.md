@@ -1,5 +1,33 @@
 # TikiShack-SovrIT
 
+A private residence with a growing Personal Technology Infrastructure that seeks to self-host localized alternatives to all cloud-based, 3rd party services to ensure absolute privacy.
+
+Netbird, a remote VPS, and a 4G WAN system are employed to ensure 99.99% uptime - failing over automatically, even during power and/or internet outages.
+
+Four permanent residents (2 human, 2 canine). Occasional guests.
+
+Home Assistant orchestrates dozens of smart-home devices.
+
+Security cameras continuously record locally and provide additional services via Frigate/AI.
+
+Local AI provides voice assistance.
+
+Most critical services remain operational during Internet outages.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+---
+
 > A private residence with a passion for home automation and a Personal/Private Technology Infrastructure (a homelab on steroids) under development.
 
 ---
