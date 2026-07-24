@@ -1,0 +1,1 @@
+A private residence with a passion for home automation and a Personal/Private Technology Infrastructure (a homelab on steroids) under development.
