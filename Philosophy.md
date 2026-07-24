@@ -1,51 +1,63 @@
-Philosophy
+# Philosophy
 
-[!IMPORTANT]
-This document defines the guiding principles of the NetCanvas project.
+> [!IMPORTANT]
+> This document defines the guiding principles of the NetCanvas project.
+>
+> Architecture evolves.
+> Implementations change.
+> Vendors come and go.
+>
+> These principles should endure.
+>
+> Whenever multiple technical solutions are possible, contributors should choose the one that best aligns with the philosophy described here.
+>
+> **Shared philosophy is imperative for shared implementation.**
 
-Unlike implementation details, these principles are intended to remain stable over the lifetime of the project. When multiple technical solutions are possible, contributors should choose the solution that best aligns with the philosophy described here.
+---
 
-Shared philosophy is imperative for shared implementation.
+# Our Mission
 
-⸻
+> **People should design networks—not configure hardware.**
 
-Why NetCanvas Exists
+This single sentence is the foundation upon which every NetCanvas design decision should rest.
 
-Professional networking has become increasingly powerful.
+If a proposed feature requires users to think more like a networking vendor than about their own network, it is probably the wrong feature—or the wrong implementation.
 
-It has also become increasingly difficult to understand.
+---
 
-NetCanvas exists because configuring a network should not require users to think like a networking vendor.
+# What We Believe
 
-Users should think about their network.
+## Networks Are More Important Than Hardware
 
-NetCanvas should think about the implementation.
+People build networks.
 
-⸻
+They do not build collections of switches, routers, access points, and firewalls.
 
-Our Mission
+Hardware exists only to implement the network.
 
-People should design networks—not configure hardware.
+NetCanvas should always present the network as the primary object and the hardware as an implementation detail.
 
-Everything in NetCanvas should support this goal.
+---
 
-Whenever implementation details conflict with user intent, user intent takes priority.
+## Intent Is More Important Than Configuration
 
-⸻
+Users should describe **what** they want.
 
-Our Philosophy
+NetCanvas should determine **how** each supported platform accomplishes that goal.
 
-Intent Before Implementation
+Whenever possible, users should think in terms of:
 
-Users should describe what they want.
+- communication
+- relationships
+- trust
+- services
+- topology
 
-NetCanvas determines how each supported platform achieves that result.
+—not VLAN IDs, ACL syntax, switch port modes, or vendor-specific terminology.
 
-Vendor terminology belongs inside platform drivers—not in the user’s workflow.
+---
 
-⸻
-
-The Canvas Is the Configuration
+## The Canvas Is the Configuration
 
 The canvas is not documentation.
 
@@ -53,164 +65,188 @@ The canvas is not a planning tool.
 
 The canvas is the desired state of the network.
 
-Documentation should be generated from the network model—not maintained separately.
+Moving an object changes the desired state.
 
-⸻
+Creating a relationship changes the desired state.
 
-Networks, Not Hardware
+Removing a relationship changes the desired state.
 
-The network is the primary object.
+Documentation should be generated automatically from the network model—not maintained separately.
 
-Routers, switches, access points, firewalls, and controllers exist only to implement the network.
+---
 
-Users should rarely need to think about individual devices unless they intentionally choose to.
+## Direct Manipulation Is Superior to Nested Configuration
 
-⸻
+Whenever practical, users should interact directly with the objects they care about.
 
-Direct Manipulation
+Prefer:
 
-Users should interact directly with the objects they care about.
-
-Whenever possible:
-
-* Drag instead of browse.
-* Connect instead of configure.
-* Move instead of edit.
-* Draw instead of describe.
+- drag over browse
+- connect over configure
+- move over edit
+- relationships over property dialogs
 
 The object itself should be the interface.
 
-⸻
+---
 
-Progressive Disclosure
+## Complexity Should Be Available—Not Mandatory
 
-Complexity should never be hidden.
+Professional networking is inherently complex.
 
-It should also never be mandatory.
+NetCanvas should never pretend otherwise.
+
+Instead, complexity should be progressively disclosed.
 
 Simple tasks should remain simple.
 
-Advanced capabilities should always remain available.
+Advanced capabilities should remain available.
 
-Beginners and experts should use the same software—not different software.
+Beginners and experts should use the same application—not different applications.
 
-⸻
+---
 
-Help Should Empower, Not Interrupt
+## Trust Is More Important Than Automation
 
-Help should always be available.
+Automation is valuable.
 
-Help should almost never interrupt.
+Predictability is essential.
 
-Users should be able to learn at their own pace without slowing experienced users.
-
-Contextual help should answer:
-
-* What is this?
-* Why does it matter?
-* Should I choose this or something else?
-
-⸻
-
-Guidance Is Different From Help
-
-Help is initiated by the user.
-
-Guidance is initiated by the system.
-
-Guidance exists to prevent accidental mistakes—not to teach networking.
-
-Users should remain in control.
-
-⸻
-
-Security Should Be Understandable
-
-Secure defaults are better than convenient defaults.
-
-Every recommendation should be explainable.
-
-Warnings should explain consequences—not simply prohibit actions.
-
-Expert users should always be able to override recommendations after understanding the implications.
-
-⸻
-
-Trust Is More Important Than Convenience
-
-Users must be able to trust NetCanvas.
+Users should always understand what NetCanvas intends to do before anything changes.
 
 Every deployment should be:
 
-* Predictable.
-* Explainable.
-* Reviewable.
-* Reproducible.
+- previewable
+- understandable
+- reviewable
+- repeatable
 
-The software should never perform surprising actions without making them visible beforehand.
+Users should never be surprised by a deployment.
 
-⸻
+---
 
-Vendors Are Implementation Details
+## Security Is a Default, Not an Add-On
 
-NetCanvas should not encourage loyalty to any particular networking ecosystem.
+Secure defaults are better than convenient defaults.
 
-The user’s investment should be in their network design—not in a specific vendor.
+When NetCanvas recommends a safer configuration, it should explain why.
 
-Whenever practical, changing hardware should not require changing the user’s mental model.
+Users should always understand the consequences of overriding a recommendation.
 
-⸻
+Expert users should retain the ability to make informed decisions.
 
-Documentation Should Be Automatic
+---
 
-Documentation should not become another task users must remember to perform.
+## Help Should Be Available, Not Intrusive
 
-The network model already contains the necessary information.
+Help should never interrupt the user's workflow.
 
-Documentation should be generated automatically from that model whenever possible.
+It should always be immediately available.
 
-⸻
+Every significant control should answer three questions:
 
-Learning Is Optional
+- What is this?
+- Why does it matter?
+- Should I choose this instead of something else?
+
+Learning should be encouraged.
+
+It should never be forced.
+
+---
+
+## Guidance Is Not Help
+
+Help is initiated by the user.
+
+Guidance is initiated by NetCanvas.
+
+These are fundamentally different systems.
+
+Guidance exists to help users avoid mistakes.
+
+Help exists to help users understand concepts.
+
+Each should be independently configurable.
+
+---
+
+## Vendors Are Implementation Details
+
+NetCanvas should never expose vendor terminology unless the user explicitly requests it.
+
+The canonical network model should remain independent of any specific vendor.
+
+Platform drivers exist to translate intent into implementation.
+
+Changing networking vendors should not require changing the user's mental model.
+
+---
+
+## Documentation Should Never Become Technical Debt
+
+Documentation should be generated from the canonical network model whenever possible.
+
+The network description should always be the authoritative source.
+
+No user should be expected to maintain a diagram separately from the configuration it represents.
+
+---
+
+## Curiosity Should Be Rewarded
 
 NetCanvas should never require networking expertise.
 
 It should always reward curiosity.
 
-Users who wish to understand networking concepts should be able to discover them naturally through contextual explanations.
+Users who wish to understand networking concepts should find explanations everywhere.
 
-Learning should be available.
+Users who do not should never be slowed down.
 
-It should never be imposed.
+---
 
-⸻
+# Decision Framework
 
-Making Decisions
+Whenever a significant design decision is proposed, contributors should ask:
 
-When evaluating new features, contributors should ask:
+1. Does this help users express their intent?
+2. Does this reduce unnecessary cognitive load?
+3. Does this increase trust?
+4. Does this keep the network—not the hardware—the primary focus?
+5. Would this principle still make sense if every currently supported networking platform disappeared tomorrow?
 
-1. Does this help users express their intent more clearly?
-2. Does this reduce unnecessary complexity?
-3. Does this improve trust?
-4. Does this make the network—not the vendor—the primary focus?
-5. Would this decision still make sense if every supported networking platform disappeared tomorrow?
+If the answer to any of these questions is **no**, the proposal should be reconsidered.
 
-If the answer to any of these questions is “no,” the design should be reconsidered.
+---
 
-⸻
+# What NetCanvas Is Not
 
-Closing Principle
+NetCanvas is **not**:
+
+- a network diagramming application
+- a replacement for existing networking hardware
+- another SDN controller
+- a vendor-specific management interface
+- Infrastructure as Code with a graphical front-end
+
+NetCanvas is a visual, intent-driven network design and configuration platform.
+
+Its purpose is not to hide networking.
+
+Its purpose is to let users think about networking instead of vendor implementation.
+
+---
+
+# Closing Principle
 
 Technology changes.
 
 Networking platforms evolve.
 
-User interfaces come and go.
+Best practices improve.
 
 The philosophy of NetCanvas should remain constant.
 
-People should not have to think like networking vendors.
+People should design networks.
 
-They should simply design the network they want.
-
-NetCanvas should do the rest.
+NetCanvas should determine how those networks are implemented.
