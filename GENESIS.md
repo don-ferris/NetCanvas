@@ -115,6 +115,8 @@ NetCanvas assumes the user draws.
 
 # The Biggest Realization
 
+What began as a project to simplify one networking platform gradually became a project to rethink how network configuration itself should work. At that point, the name NCMM no longer described the project. It had outgrown its original purpose. The project became NetCanvas.
+
 At one point the project was described as:
 
 > "A network CAD program."
@@ -383,23 +385,6 @@ Future platform drivers may include:
 Adding support for a new platform should require writing a new driver—not redesigning the application.
 
 The user's mental model should remain unchanged regardless of the hardware beneath it.
-
----
-
-# Guiding Principles
-
-1. The canvas is the configuration.
-2. Intent before implementation.
-3. Vendors are implementation details.
-4. Direct manipulation over nested menus.
-5. Progressive disclosure over unnecessary complexity.
-6. Help should always be available but never intrusive.
-7. Guidance should protect users without taking control away from them.
-8. Secure defaults are better than convenient defaults.
-9. Preview before deployment.
-10. The network—not the hardware—is the primary object.
-11. Documentation should be generated automatically from the network model.
-12. Users should never be required to think like the vendor.
 
 ---
 
