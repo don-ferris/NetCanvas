@@ -134,10 +134,8 @@ Before contributing, we encourage contributors to read the project's founding do
 > [!NOTE]
 > **Project Background**
 >
-> NetCanvas is not being created by a professional network engineer.
->
-> It is being created by someone who believes professional networking should be significantly easier to understand and configure without sacrificing capability.
->
+> NetCanvas is not being created by a professional network engineer. Far from it.
+> It is being created by someone who thought, "There has to be a better way..."
 > Contributions from networking professionals—whether reviewing architecture, validating technical decisions, or helping shape the user experience—are enthusiastically welcomed.
 
 ---
