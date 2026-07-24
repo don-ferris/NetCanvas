@@ -4,7 +4,7 @@
 
 NetCanvas exists to make professional-quality network configuration accessible through direct manipulation rather than device-specific configuration.
 
-The user should design the network they want.
+It empowers users to design their desired network with drag and drop simplicity.
 
 NetCanvas determines how each supported vendor platform implements that design.
 
@@ -14,11 +14,9 @@ NetCanvas determines how each supported vendor platform implements that design.
 
 The canvas is the source of truth.
 
-The diagram is not documentation.
+The diagram is not documentation; the diagram IS the configuration.
 
-The diagram IS the configuration.
-
-Changing the diagram changes the desired network.
+Changing the diagram changes the network.
 
 Documentation becomes an automatic by-product.
 
@@ -96,7 +94,7 @@ Vendor Controller
 
 # Canonical Model
 
-The canonical model must never contain vendor-specific objects.
+The canonical model should contain vendor-specific objects.
 
 For example:
 
@@ -191,7 +189,7 @@ Help answers three questions:
 
 - What is this?
 - Why does it matter?
-- When would I choose something else?
+- Should I choose this or something else?
 
 ---
 
@@ -223,31 +221,26 @@ Example profiles:
 
 Maximum assistance.
 
-Intent-driven dialogs.
-
-Wizard workflows.
-
-Verbose explanations.
+- Intent-driven dialogs.
+- Wizard workflows.
+- AI assistant
+- Verbose explanations.
 
 ## Standard
 
 Recommended default.
 
-Help available everywhere.
-
-Minimal interruptions.
-
-Security guardrails enabled.
+- Help available everywhere.
+- Minimal interruptions.
+- Security guardrails enabled.
 
 ## Expert
 
-Fast workflow.
+Fastest workflow.
 
-No unnecessary confirmations.
-
-No wizard prompts.
-
-All advanced options visible.
+- No unnecessary confirmations.
+- No wizard prompts.
+- All advanced options visible.
 
 Users may customize every profile.
 
@@ -255,9 +248,7 @@ Users may customize every profile.
 
 # Learning
 
-NetCanvas should never require networking expertise.
-
-It should always reward curiosity.
+NetCanvas does not require networking expertise.
 
 Users who wish to understand networking concepts should be able to discover them naturally through contextual help.
 
@@ -295,6 +286,8 @@ Create DHCP Scope
 
 No configuration should be applied without first showing the intended changes.
 
+Step-by-step available - prepends each deployment intent with a "Deploy" button, allowing users to implement intents one at a time, viewing and testing the resulting configuration before moving on to the next.
+
 ---
 
 # Future Vision
@@ -312,7 +305,7 @@ Possible future drivers include:
 
 The user experience should remain identical regardless of vendor.
 
-Changing vendors should require changing only the platform driver—not the user's mental model.
+Changing vendors/platforms should require changing only the platform driver—not the user's mental model.
 
 ---
 
@@ -325,6 +318,5 @@ Changing vendors should require changing only the platform driver—not the user
 5. Secure by default.
 6. Explain every recommendation.
 7. Never require networking expertise.
-8. Always reward curiosity.
-9. Preview before deployment.
-10. The network—not the hardware—is the primary object.
+8. Preview before deployment.
+9. The network—not the hardware—is the primary object.
