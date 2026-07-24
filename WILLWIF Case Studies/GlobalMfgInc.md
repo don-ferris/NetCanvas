@@ -1,6 +1,6 @@
-# <Organization Name>
+# Global Manufacturing Inc
 
-> Brief description of the organization and its mission.
+> A multinational, mid-sized business (1200 employees) with offices in New York, London, Tokyo, and Rome, and manufacturing facilities in Seoul, Shanghai, and Mumbai.
 
 ---
 
@@ -458,6 +458,3 @@ What did this case study teach us about network design?
 What capabilities would NetCanvas need in order to model this environment naturally?
 
 -
-
-Global Manufacturing Inc is a multinational, mid-sized business (1200 employees) with offices in New York, London, Tokyo, and Rome, and manufacturing facilities in Seoul, Shanghai, and Mumbai.
-
