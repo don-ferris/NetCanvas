@@ -1,6 +1,6 @@
-# <Organization Name>
+# Metro Public Library
 
-> Brief description of the organization and its mission.
+> A public library system in Southern California, Metro Public Library has 77 branches spanning 8 cities in Orange County with administrative headquarters and IT infrastructure in the city of Orange, CA.
 
 ---
 
@@ -459,4 +459,3 @@ What capabilities would NetCanvas need in order to model this environment natura
 
 -
 
-A public library system in Southern California, Metro Public Library has 36 branches spanning 8 cities in Orange County with administrative headquarters and IT infrastructure in the city of Orange, CA.
