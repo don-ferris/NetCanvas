@@ -52,7 +52,7 @@ A well-designed network, however, should remain valuable regardless of the hardw
 
 NetCanvas aims to separate network design from vendor implementation so that replacing hardware does not require redesigning the network itself.
 
-A network configuration should be portable.
+A network design should be portable.
 
 Only its implementation should change.
 
@@ -66,7 +66,7 @@ Much of that complexity is necessary - but the incomprehensibility should not be
 
 NetCanvas does not attempt to eliminate complexity.
 
-It attempts to organize it and make it unnecessary.
+It attempts to organize it and shield users from it - unless and until it becomes necessary.
 
 Simple tasks should remain simple.
 
@@ -88,7 +88,7 @@ They are design goals that must coexist.
 
 ---
 
-## Security Should Be Natural
+## Security Should Be The Default
 
 Security should not depend on remembering dozens of best practices after the network has already been built.
 
