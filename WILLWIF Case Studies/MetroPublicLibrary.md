@@ -4,6 +4,29 @@
 
 ---
 
+## Design Challenges
+
+---
+
+## Design Tensions
+
+---
+
+## Taxonomy
+
+### ACTORS
+
+### SERVICES
+
+### RESOURCES
+
+###bLOCATIONS
+
+### RELATIONSHIPS
+
+### POLICIES
+
+### EVENTS
 # Organization Overview
 
 ## Industry
