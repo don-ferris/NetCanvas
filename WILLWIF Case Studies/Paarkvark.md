@@ -9,7 +9,7 @@
 
 ---
 
-## Design Tensions
+## Architectural Tensions
 
 ---
 
@@ -21,7 +21,7 @@
 
 ### RESOURCES
 
-###bLOCATIONS
+### LOCATIONS
 
 ### RELATIONSHIPS
 
