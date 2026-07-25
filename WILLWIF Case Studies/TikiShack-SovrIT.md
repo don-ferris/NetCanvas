@@ -24,4 +24,24 @@ Unlike a traditional residential network, TikiShack is designed around **people,
 
 ## Design Challenges:
 
-Design a secure, resilient, privacy-first network that enables residents, guests, autonomous systems, and self-hosted services to communicate appropriately while minimizing unnecessary trust, maintaining local-first operation, and continuing to provide essential functionality during Internet outages.
+## Design Challenges
+
+1. Design a secure, resilient, privacy-first network that enables residents, guests, autonomous systems, and self-hosted services to communicate appropriately while minimizing unnecessary trust, maintaining local-first operation, and continuing to provide essential functionality during Internet outages.
+2. Provide seamless access to private services for authorized residents regardless of their location, ensuring that remote access is as transparent and secure as local access.
+3. Enable Home Assistant to orchestrate dozens of smart-home devices while ensuring that individual IoT devices have access only to the services required for their intended function.
+
+4. Protect sensitive personal information by ensuring that data remains within the Personal Technology Infrastructure whenever practical and that external cloud services are used only when necessary.
+
+5. Maintain strong isolation between trusted residents, guests, IoT devices, surveillance systems, management infrastructure, and experimental systems without sacrificing usability.
+
+6. Ensure that security cameras, AI-assisted surveillance, and automation services continue operating during Internet outages while preventing unnecessary external access to surveillance systems.
+
+7. Design the network so that the failure, replacement, or relocation of individual servers, appliances, or network hardware has minimal impact on the logical design of the infrastructure.
+
+8. Support future expansion of the Personal Technology Infrastructure—including additional services, compute nodes, automation capabilities, AI systems, and physical devices—without requiring fundamental redesign of the network architecture.
+
+9. Provide appropriate visibility into the health and status of the infrastructure while ensuring that monitoring and management capabilities remain protected from unauthorized access.
+
+10. Balance convenience with security so that everyday interactions remain simple for residents while maintaining least-privilege access, strong authentication, and zero-trust principles throughout the environment.
+
+
