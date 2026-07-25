@@ -57,7 +57,7 @@ Unlike a traditional residential network, TikiShack is designed around **people,
 
 ### RESOURCES
 
-###bLOCATIONS
+### LOCATIONS
 
 ### RELATIONSHIPS
 
