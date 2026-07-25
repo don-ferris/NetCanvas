@@ -47,3 +47,20 @@ Unlike a traditional residential network, TikiShack is designed around **people,
 - Local-first vs Cloud Integration
 - Simplicity vs Extensibility
 
+---
+
+## Taxonomy
+
+### ACTORS
+
+### SERVICES
+
+### RESOURCES
+
+###bLOCATIONS
+
+### RELATIONSHIPS
+
+### POLICIES
+
+### EVENTS
